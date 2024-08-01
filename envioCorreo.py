@@ -1,10 +1,13 @@
+import os
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-from credenciales_correo import usuario_correo, contraseña_correo
-
 def enviar_correo(destinatario, asunto, cuerpo):
+    # Obtener credenciales desde variables de entorno
+    usuario_correo = os.environ.get('CORREO_USUARIO')
+    contraseña_correo = os.environ.get('CORREO_CONTRASENIA')
+
     # Servidor SMTP
     servidor_smtp = "smtp.gmail.com"
     puerto_smtp = 587
@@ -28,7 +31,7 @@ def enviar_correo(destinatario, asunto, cuerpo):
         print(f"Error al enviar el correo: {e}")
 
 # Aplicación
-destinatario = "123test12345@yopmail.com"
+destinatario = "elryusam@gmail.com"
 asunto = "Prueba de correo desde Python"
 cuerpo = "Hola, esto es un mensaje de prueba desde Python."
 
