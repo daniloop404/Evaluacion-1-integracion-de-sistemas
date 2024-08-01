@@ -2,7 +2,7 @@
 
 ## Información General
 
-- **Nombre del Estudiante:** Juan Paz
+- **Nombre del Estudiante:** Daniel Sampedro
 - **Módulo:** 4
 - **Asignatura:** Integración de Sistemas Informáticos
 
