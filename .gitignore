@@ -1,0 +1,9 @@
+# Ignorar archivos .db
+*.db
+
+# Ignorar archivos específicos
+secrets.js
+credenciales_correo.py
+
+# Ignorar la carpeta __pycache__
+__pycache__/
